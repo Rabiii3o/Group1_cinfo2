@@ -11,6 +11,7 @@ package group1_2info2;
  */
 public class Group1_2info2 {
 
+<<<<<<< HEAD
     /**
      * @param args the command line arguments
      */
@@ -30,6 +31,24 @@ public class Group1_2info2 {
             System.out.println(e.getMessage());
         }
 
+=======
+
+
+    public static int Somme(int a, int b){
+        return a+b;
+    }
+
+ public static int Factoriel(int n){
+      if(n==0){
+          return 1;
+      }
+      return n*Factoriel(n-1);
+  }
+        public static void main(String[] args) {
+            
+        System.out.println(Somme(2,7));
+    
+>>>>>>> origin/main
     }
 
     public static boolean isPrime(int number) {
