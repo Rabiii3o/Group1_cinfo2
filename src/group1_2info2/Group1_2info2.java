@@ -9,16 +9,64 @@ package group1_2info2;
  *
  * @author Rabii
  */
+    /**
+     *
+     * @param number
+     * @return
+     */
+    
+
 public class Group1_2info2 {
 
     /**
      * @param args the command line arguments
      */
 
+     public static int Somme(int a, int b){
+        return a+b;
+    }
 
+ public static int Factoriel(int n){
+      if(n==0){
+          return 1;
+      }
+      return n*Factoriel(n-1);
+  }
+    
+   
+public static int paire(int a){
+    if ((a/2)==0) 
+    return a;
+    else return -1;
+    
+}
+public static int calculateSquare(int number) {
+    if (number < 0) {
+        
+        throw new IllegalArgumentException("Impossible de calculer la racine carrée d'un nombre négatif.");
+    }
+    return (int) Math.sqrt(number);
+}
 public static int puissance (int a, int b ){
-    int p=1;
-<<<<<<< HEAD
+    int p=1; 
+    if (b>=1){
+        for (int i=1; i<=b; i++) {
+            p = p*a;
+        }
+    }
+    return p;
+    }
+    public static boolean isPrime(int number) {
+        if (number <= 1) {
+            return false;
+        }
+        for (int i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
     /**
      * @param args the command line arguments
      */
@@ -36,81 +84,16 @@ public static int puissance (int a, int b ){
             System.out.println("La racine carrée de " + numToCalculate + " est : " + result);
         } catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
+          
         }
-
-=======
-
-
-    public static int Somme(int a, int b){
-        return a+b;
-    }
-
- public static int Factoriel(int n){
-      if(n==0){
-          return 1;
-      }
-      return n*Factoriel(n-1);
-  }
-    
-    if (b>=1){
-    for (int i=1; i<=b; i++) {
-        p = p*a;
-    }
-}
-return p;
-}
-public static int paire (int a){
-    if ((a/2)==0) return 1;
-}
-
-
-
-public static void main(String[] args) {
-     
-    System.out.println(Somme(2,7));
-    system.out.println(paire(2));
-}
-
-
-
-
-
-
-
-
-
-
-}
-        public static void main(String[] args) {
-            
         System.out.println(Somme(2,7));
-    
->>>>>>> origin/main
-    }
+        System.out.println(paire(2));
 
-    public static boolean isPrime(int number) {
-        if (number <= 1) {
-            return false;
-        }
-        for (int i = 2; i <= Math.sqrt(number); i++) {
-            if (number % i == 0) {
-                return false;
-            }
-        }
-        return true;
-    }
-    /**
-     *
-     * @param number
-     * @return
-     */
-    public static int calculateSquare(int number) {
-        if (number < 0) {
-            
-            throw new IllegalArgumentException("Impossible de calculer la racine carrée d'un nombre négatif.");
-        }
-        return (int) Math.sqrt(number);
-    }
+
+}
+ 
+
+  
 
     
 
