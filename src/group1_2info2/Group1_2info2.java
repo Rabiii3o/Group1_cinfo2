@@ -18,6 +18,18 @@ public class Group1_2info2 {
 
 public static int puissance (int a, int b ){
     int p=1;
+
+
+    public static int Somme(int a, int b){
+        return a+b;
+    }
+
+ public static int Factoriel(int n){
+      if(n==0){
+          return 1;
+      }
+      return n*Factoriel(n-1);
+  }
     
     if (b>=1){
     for (int i=1; i<=b; i++) {
@@ -34,7 +46,7 @@ public static int paire (int a){
 
 public static void main(String[] args) {
      
-
+    System.out.println(Somme(2,7));
     system.out.println(paire(2));
 }
 
