@@ -23,7 +23,16 @@ public class Group1_2info2 {
      */
 
      public static int Somme(int a, int b){
-        return a+b;
+        return a+b;}
+      
+    
+     public static int pgcd(int a, int b) {
+      while (b != 0) {
+        int temp = a;
+        a = b;
+        b = temp % b;
+      }
+      return a;
     }
 
  public static int Factoriel(int n){
@@ -33,11 +42,14 @@ public class Group1_2info2 {
       return n*Factoriel(n-1);
   }
     
-   
+  public static boolean estPair(int nombre) {
+    return nombre % 2 == 0;
+  }
 public static int paire(int a){
     if ((a/2)==0) 
     return a;
     else return -1;
+   
     
 }
 public static int calculateSquare(int number) {
@@ -66,7 +78,8 @@ public static int puissance (int a, int b ){
             }
         }
         return true;
-    }
+    }  
+   
     /**
      * @param args the command line arguments
      */
@@ -88,7 +101,7 @@ public static int puissance (int a, int b ){
         }
         System.out.println(Somme(2,7));
         System.out.println(paire(2));
-
+        System.out.println("ahmed code");
 
 }
  
