@@ -32,7 +32,7 @@ public class Group1_2info2 {
         a = b;
         b = temp % b;
       }
-      return a;
+      return 2*a;
     }
 
  public static int Factoriel(int n){
